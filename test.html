@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maquette 2</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            
+            <div id="top">
+                <div id="logo">
+                    <img src="logo.png" alt="logo" id="log">
+                </div>
+                <div id="nav">
+                    <a href="#" class="text"><h5 class="link">Home</h5></a>
+                    <a href="#" class="text"><h5 class="link">Your benefits</h5></a>
+                    <a href="#" class="text"><h5 class="link">Our process</h5></a>
+                    <a href="#" class="text"><h5 class="link">Start a project</h5></a>
+                </div>
+                <div id="btn_top">
+                    <a href="#" class="text_top"><h5 class="btn_top">Get in Tuch</h5></a>
+                </div>
+            </div>
+            <div id="middle">
+                <h1>a digital product design agency</h1>
+                <p>We are Creative and Professional Digital Agency</p>
+                
+                <a href="#" class="text_btn"><h5 class="btn_mid">Get in Tuch</h5></a>
+                
+            </div>
+            <div id="bottom">
+                <img src="fond.png" alt="fond" id="fond">
+            </div>
+            <div id="icons">
+                <a href="mailto: info@emploijeunes.ci"><img src="icon-mail.jpg" alt="icon mail" class="icon-mail"></a>
+            </div>
+        </main>
+
+        <!-- Popup Cam-->
+        <style>
+            /* Popup container - can be anything you want */
+            .popup-icon-cam {
+              position: relative;
+              display: inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+            
+            /* The actual popup */
+            .popupvideo-icon-cam {
+              visibility: hidden;
+              width: 580px;
+              height: 320px;
+              background-color: #555;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 8px 0;
+              position: absolute;
+              bottom: 125%;
+              left: 50%;
+              margin-left: -290px;
+            }
+            
+            /* Popup arrow */
+             .popupvideo-icon-cam::after {
+              content: "";
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+              border-width: 5px;
+              border-style: solid;
+              border-color: #555 transparent transparent transparent;
+            }
+            
+            /* Toggle this class - hide and show the popup */
+            .popup-icon-cam .show {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+            
+            /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+              from {opacity: 0;} 
+              to {opacity: 1;}
+            }
+            
+            @keyframes fadeIn {
+              from {opacity: 0;}
+              to {opacity:1 ;}
+            }
+            </style>            
+            <div class="popup-icon-cam icon-cam" onclick="mypopmicroFunction()"><img src="icon-cam.jpg" alt="Icon caméra">
+              <span class="popupvideo-icon-cam" id="myPopup-cam">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sYmlbEd8DNk" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+            </span>
+            </div>
+            
+            <script>
+            // When the user clicks on div, open the popup
+            function mypopmicroFunction() {
+              var popup = document.getElementById("myPopup-cam");
+              popup.classList.toggle("show");
+            }
+            </script>
+            
+            <!-- Pop micro Pop microPop microPop microPop microPop microPop microPop microPop microPop micro -->
+
+            <style>
+                /* Popup container - can be anything you want */
+                .popup-icon-micro {
+                  position: relative;
+                  display: inline-block;
+                  cursor: pointer;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                }
+                
+                /* The actual popup */
+                .popupaudio-icon-micro {
+                  visibility: hidden;
+                  width: 185px;
+                  height: 185px;
+                  background-color: #555;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 6px;
+                  padding: 8px 0;
+                  position: absolute;
+                  bottom: 125%;
+                  left: 50%;
+                  margin-left: -90px;
+                }
+                
+                /* Popup arrow */
+                 .popupaudio-icon-micro::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -5px;
+                  border-width: 5px;
+                  border-style: solid;
+                  border-color: #555 transparent transparent transparent;
+                }
+                
+                /* Toggle this class - hide and show the popup */
+                .popup-icon-micro .show {
+                  visibility: visible;
+                  -webkit-animation: fadeIn 1s;
+                  animation: fadeIn 1s;
+                }
+                
+                /* Add animation (fade in the popup) */
+                @-webkit-keyframes fadeIn {
+                  from {opacity: 0;} 
+                  to {opacity: 1;}
+                }
+                
+                @keyframes fadeIn {
+                  from {opacity: 0;}
+                  to {opacity:1 ;}
+                }
+                </style>            
+                <div class="popup-icon-micro icon-micro" onclick="mypopcamFunction()"><img src="icon-micro.jpg" alt="Icon micro">
+                  <span class="popupaudio-icon-micro" id="myPopup-micro">
+                     <a href="https://www.radio-en-ligne.fr/france-info" target="_blank"><img src="franceinfo.png" alt="logo france info"></a>
+                </span>
+                </div>
+                
+                <script>
+                // When the user clicks on div, open the popup
+                function mypopcamFunction() {
+                  var popup = document.getElementById("myPopup-micro");
+                  popup.classList.toggle("show");
+                }
+                </script>
+
+                <!-- Pop heure Pop heurePop heurePop heurePop heurePop heurePop heurePop heurePop heurePop heurePop heurePop heure -->
+
+            <style>
+                /* Popup container - can be anything you want */
+                .popup-icon-heure {
+                  position: relative;
+                  display: inline-block;
+                  cursor: pointer;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                }
+                
+                /* The actual popup */
+                .popupheure-icon-heure {
+                  visibility: hidden;
+                  width: 250px;
+                  height: 250px;
+                  background-color: #fff;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 6px;
+                  padding: 8px 0;
+                  position: absolute;
+                  bottom: 125%;
+                  left: 50%;
+                  margin-left: -120px;
+                }
+                
+                /* Popup arrow */
+                 .popupheure-icon-heure::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -5px;
+                  border-width: 5px;
+                  border-style: solid;
+                  border-color: #555 transparent transparent transparent;
+                }
+                
+                /* Toggle this class - hide and show the popup */
+                .popup-icon-heure .show {
+                  visibility: visible;
+                  -webkit-animation: fadeIn 1s;
+                  animation: fadeIn 1s;
+                }
+                
+                /* Add animation (fade in the popup) */
+                @-webkit-keyframes fadeIn {
+                  from {opacity: 0;} 
+                  to {opacity: 1;}
+                }
+                
+                @keyframes fadeIn {
+                  from {opacity: 0;}
+                  to {opacity:1 ;}
+                }
+                </style>            
+                <div class="popup-icon-heure icon-hour" onclick="mypopheureFunction()"><img src="icon-hour.jpg" alt="Icon heure">
+                  <span class="popupheure-icon-heure" id="myPopup-heure">
+                    <div style="text-align:center;padding:1em 0;"> 
+                        <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/fr/city/2293538">
+                        <span style="color:gray;">Heure actuelle</span><br />Abidjan, Côte-d'Ivoire</a></h4> 
+                        <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=medium&timezone=Africa%2FAbidjan" 
+                        width="200" height="115" frameborder="0" seamless></iframe> 
+                    </div>
+                </span>
+                </div>
+                
+                <script>
+                // When the user clicks on div, open the popup
+                function mypopheureFunction() {
+                  var popup = document.getElementById("myPopup-heure");
+                  popup.classList.toggle("show");
+                }
+                </script>
+            
+    </body>
+</html>
