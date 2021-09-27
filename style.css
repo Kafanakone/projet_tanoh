@@ -1,10 +1,12 @@
-body{
+/* body{
     font-family: Century Gothic;
     height: 100vh;
     margin: 0%;
+} */
+.bg-primary{
+    background-color: rgb(0, 156, 234);
 }
-
-
+/* 
 
 #top{
     display: flex;
@@ -124,29 +126,142 @@ p{
 }
 /* icons */
 .icon-cam { 
-    position: absolute;
-    left: 35%; 
-    bottom: 47%;
+    position: relative;
+    left: 5em; 
+    top: 9em;
     z-index: 999;   
 }
 
 .icon-hour { 
-    position: absolute;
-    left: 52%; 
-    bottom: 50%;
+    position: relative;
+    left: 19em; 
+    top: 7em;
     z-index: 999;   
 }
 
 .icon-mail { 
-    position: absolute;
-    left: 40%; 
-    bottom: 55%;
+    position: relative;
+    left: 9em; 
+    top: 4em;
     z-index: 999;   
 }
 
 .icon-micro { 
-    position: absolute;
-    left: 65%; 
-    bottom: 35%;
+    position: relative;
+    left: 29em; 
+    top: 13em;
     z-index: 999;   
+} 
+/* .mxicon{
+    margin-left: 50em;
+} */
+
+@media (max-width:991px) {
+    .icon-mail { 
+        left: 5em; 
+    }
+    .icon-cam { 
+        left: 3em; 
+        top: 7em;
+    }
+    .icon-hour { 
+        left: 9.6em; 
+        top: 5em;
+    }
+    .icon-micro { 
+        left: 18em; 
+        top: 9em;
+    }
+}
+
+@media (max-width:767px) {
+    .icon-mail { 
+        left: 3em; 
+        width: 30px;
+    }
+    .icon-cam { 
+        left: 2em; 
+        top: 5em;
+    }
+    .icon-cam img { 
+        width: 25px;
+    }
+    .icon-hour { 
+        left: 6.4em; 
+        top: 3.6em;
+    }
+    .icon-hour img { 
+        width: 20px;
+    }
+    .icon-micro { 
+        left: 13em; 
+        top: 6em;
+    }
+    .icon-micro img { 
+        width: 25px;
+    }
+}
+@media (max-width:448px) {
+    .icon-mail { 
+        left: 3em; 
+        width: 20px;
+    }
+    .icon-cam { 
+        left: 2em; 
+        top: 4.5em;
+    }
+    .icon-cam img { 
+        width: 18px;
+    }
+    .icon-hour { 
+        left: 6.4em; 
+        top: 3.6em;
+    }
+    .icon-hour img { 
+        width: 10px;
+    }
+    .icon-micro { 
+        left: 2em; 
+        top: 1em;
+    }
+    .icon-micro img { 
+        width: px;
+    }
+}
+@media (max-width:530px) {
+    .icon-hour { 
+        left: 5em; 
+    }
+    .icon-micro { 
+        left: 11em; 
+        top: 5.7em;
+    }
+    .icon-micro img { 
+        width: 25px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .icon-mail { 
+        width: 10px;
+    }
+    .icon-cam { 
+        top: 4em;
+    }
+    .icon-cam img { 
+        width: 10px;
+    }
+    .icon-hour { 
+        top: em;
+    }
+    .icon-hour img { 
+        width: px;
+    }
+    .icon-micro { 
+        top: em;
+    }
+    .icon-micro img { 
+        width: px;
+    }
 }

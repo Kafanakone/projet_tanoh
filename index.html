@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <title>Bienvenue sur le site Officiel de Booking</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
         <title>Maquette 2</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            
-            <div id="top">
-                <div id="logo">
-                    <img src="logo.png" alt="logo" id="log">
-                </div>
-                <div id="nav">
-                    <a href="#" class="text"><h5 class="link">Home</h5></a>
-                    <a href="#" class="text"><h5 class="link">Your benefits</h5></a>
-                    <a href="#" class="text"><h5 class="link">Our process</h5></a>
-                    <a href="#" class="text"><h5 class="link">Start a project</h5></a>
-                </div>
-                <div id="btn_top">
-                    <a href="#" class="text_top"><h5 class="btn_top">Get in Tuch</h5></a>
-                </div>
+        <main class="container">
+          <div class="row bg-primary ">
+            <nav class="col-12 col-sm  navbar navbar-expand-lg navbar-dark text-center ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" width="" height="" alt="Info Logo" class="img-fluid align-middle my-auto"/></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div id="navbarContent" class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link active btn-lg btn btn-navbar font-weight-bold " href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a type="button" class="nav-link  btn-lg btn btn-navbar font-weight-bold " href="">Your benefits</a>
+                    </li>
+                    <li class="nav-item">
+                      <a type="button" class="nav-link  btn-lg btn-navbar font-weight-bold " href="">Our process</a>
+                    </li>
+                    <li class="nav-item">
+                      <a type="button" class="nav-link  btn-lg btn-navbar font-weight-bold " href="">Start a project</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="col col-sm-3 mx-sm-0 my-auto mx-auto">
+                <a type="button" href="#" class="text_top btn btn-lg bg-secondary"><h5 class="btn_top text-white lead">Get in Tuch</h5></a>
             </div>
-            <div id="middle">
-                <h1>a digital product design agency</h1>
-                <p>We are Creative and Professional Digital Agency</p>
-                
-                <a href="#" class="text_btn"><h5 class="btn_mid">Get in Tuch</h5></a>
-                
+          </div>
+          <!-- End navbar -->
+
+          <div class="container">
+            <div class="col mx-auto text-center mt-2">
+              <h1>a digital product design agency</h1>
+              <p>We are Creative and Professional Digital Agency</p>
+              <div class="col col-sm-3 align-middle mx-auto">
+                <a type="button" href="#" class="text_top btn btn-lg bg-primary"><h5 class="btn_top text-white lead">Get in Tuch</h5></a>
             </div>
-            <div id="bottom">
-                <img src="fond.png" alt="fond" id="fond">
+          </div>
+          </div>
+            <div class="container">
+              <!-- Icons -->
+              <div class="col-7 mx-auto mxicon">
+                <!-- Mail -->
+                <div id="icons">
+                  <a href="mailto: info@emploijeunes.ci"><img src="icon-mail.jpg" alt="icon mail img-fluid" class="icon-mail"></a>
+              </div>
+              <!-- Youtube -->
+              <div class="popup-icon-cam icon-cam" onclick="mypopmicroFunction()"><img src="icon-cam.jpg" alt="Icon caméra">
+                <span class="popupvideo-icon-cam" id="myPopup-cam">
+                    <iframe width="280" height="150" src="https://www.youtube.com/embed/sYmlbEd8DNk" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+              </span>
+              </div>
+              <!-- Micro -->
+              <div class="popup-icon-micro icon-micro" onclick="mypopcamFunction()"><img src="icon-micro.png" alt="Icon micro">
+                <span class="popupaudio-icon-micro" id="myPopup-micro">
+                   <a href="https://www.radio-en-ligne.fr/france-info" target="_blank"><img src="franceinfo.png" alt="logo france info"></a>
+              </span>
+              </div>
+              <!-- Heure -->
+              <div class="popup-icon-heure icon-hour" onclick="mypopheureFunction()"><img src="icon-hour.png" alt="Icon heure">
+                <span class="popupheure-icon-heure" id="myPopup-heure">
+                  <div style="text-align:center;padding:1em 0;"> 
+                      <P><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/fr/city/2293538">
+                      <span style="color:gray;">Heure actuelle</span><br />Abidjan, Côte-d'Ivoire</a></P> 
+                      <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=medium&timezone=Africa%2FAbidjan" 
+                      width="250" height="110" frameborder="0" seamless></iframe> 
+                  </div>
+              </span>
+              </div>
+                <img src="fond.png" alt="fond"  class="img-fluid mx-auto">
             </div>
-            <div id="icons">
-                <a href="mailto: info@emploijeunes.ci"><img src="icon-mail.jpg" alt="icon mail" class="icon-mail"></a>
+            <!-- <div id="icons">
+                <a href="mailto: info@emploijeunes.ci"><img src="icon-mail.jpg" alt="icon mail img-fluid" class="icon-mail"></a>
+            </div> -->
             </div>
         </main>
 
@@ -53,8 +105,8 @@
             /* The actual popup */
             .popupvideo-icon-cam {
               visibility: hidden;
-              width: 580px;
-              height: 320px;
+              width: 300px;
+              height: 180px;
               background-color: #555;
               color: #fff;
               text-align: center;
@@ -63,7 +115,7 @@
               position: absolute;
               bottom: 125%;
               left: 50%;
-              margin-left: -290px;
+              margin-left: -150px;
             }
             
             /* Popup arrow */
@@ -96,13 +148,13 @@
               to {opacity:1 ;}
             }
             </style>            
-            <div class="popup-icon-cam icon-cam" onclick="mypopmicroFunction()"><img src="icon-cam.jpg" alt="Icon caméra">
+            <!-- <div class="popup-icon-cam icon-cam" onclick="mypopmicroFunction()"><img src="icon-cam.jpg" alt="Icon caméra">
               <span class="popupvideo-icon-cam" id="myPopup-cam">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/sYmlbEd8DNk" title="YouTube video player" 
                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowfullscreen></iframe>
             </span>
-            </div>
+            </div> -->
             
             <script>
             // When the user clicks on div, open the popup
@@ -172,11 +224,11 @@
                   to {opacity:1 ;}
                 }
                 </style>            
-                <div class="popup-icon-micro icon-micro" onclick="mypopcamFunction()"><img src="icon-micro.jpg" alt="Icon micro">
+                <!-- <div class="popup-icon-micro icon-micro" onclick="mypopcamFunction()"><img src="icon-micro.jpg" alt="Icon micro">
                   <span class="popupaudio-icon-micro" id="myPopup-micro">
                      <a href="https://www.radio-en-ligne.fr/france-info" target="_blank"><img src="franceinfo.png" alt="logo france info"></a>
                 </span>
-                </div>
+                </div> -->
                 
                 <script>
                 // When the user clicks on div, open the popup
@@ -203,8 +255,8 @@
                 /* The actual popup */
                 .popupheure-icon-heure {
                   visibility: hidden;
-                  width: 250px;
-                  height: 250px;
+                  width: 200px;
+                  height: 200px;
                   background-color: #fff;
                   color: #fff;
                   text-align: center;
@@ -246,7 +298,7 @@
                   to {opacity:1 ;}
                 }
                 </style>            
-                <div class="popup-icon-heure icon-hour" onclick="mypopheureFunction()"><img src="icon-hour.jpg" alt="Icon heure">
+                <!-- <div class="popup-icon-heure icon-hour" onclick="mypopheureFunction()"><img src="icon-hour.jpg" alt="Icon heure">
                   <span class="popupheure-icon-heure" id="myPopup-heure">
                     <div style="text-align:center;padding:1em 0;"> 
                         <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/fr/city/2293538">
@@ -255,7 +307,7 @@
                         width="200" height="115" frameborder="0" seamless></iframe> 
                     </div>
                 </span>
-                </div>
+                </div> -->
                 
                 <script>
                 // When the user clicks on div, open the popup
@@ -264,6 +316,10 @@
                   popup.classList.toggle("show");
                 }
                 </script>
-            
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
     </body>
 </html>
